@@ -203,5 +203,5 @@ next.addEventListener("click", () => {
         "question": "What class did Neville end up teaching at Hogwarts?",
         "options": ["Astronomy", "Herbology", "Charms", "Muggle Studies"]
     }
-}
 ] */
+
