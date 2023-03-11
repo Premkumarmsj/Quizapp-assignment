@@ -1,31 +1,54 @@
 // Questions will be asked
-const Questions = [{
+const Questions = [
+    {
     id: 0,
-    q: "What is capital of India?",
-    a: [{ text: "gandhinagar", isCorrect: false },
-    { text: "Surat", isCorrect: false },
-    { text: "Delhi", isCorrect: true },
-    { text: "mumbai", isCorrect: false }
+    q: "Which was not one of Voldemort's Horcruxes?",
+    a: [{ text: "Harry", isCorrect: false },
+    { text: "Nagini", isCorrect: false },
+    { text: "Helga's Diadem", isCorrect: true },
+    { text: "Tom Riddle's Diary", isCorrect: false }
     ]
 
 },
 {
     id: 1,
-    q: "What is the capital of Thailand?",
-    a: [{ text: "Lampang", isCorrect: false, isSelected: false },
-    { text: "phuket", isCorrect: false },
-    { text: "Ayutthaya", isCorrect: false },
-    { text: "Bangkok", isCorrect: true }
+    q: "Which of these are not one of Hagrid's many pets?",
+    a: [{ text: "Grawp", isCorrect: true},
+    { text: "Fluffy", isCorrect: false },
+    { text: "Aragog", isCorrect: false },
+    { text: "Noberta", isCorrect: false }
     ]
 
 },
 {
     id: 2,
-    q: "What is the capital of Gujarat",
-    a: [{ text: "surat", isCorrect: false },
-    { text: "vadodara", isCorrect: false },
-    { text: "gandhinagar", isCorrect: true },
-    { text: "rajkot", isCorrect: false }
+    q: "Which class did Severus Snape always want to teach?",
+    a: [{ text: "Potions", isCorrect: true },
+    { text: "Charms", isCorrect: false },
+    { text: "Defense Against Dark Arts", isCorrect: false },
+    { text: "Transfiguration", isCorrect: false }
+    ]
+
+},
+
+{
+    id: 3,
+    q: "Which Hogwarts house did Moaning Myrtle belong in?",
+    a: [{ text: "Gryffindor", isCorrect: false },
+    { text: "Slytherin", isCorrect: false },
+    { text: "Ravenclaw", isCorrect: true },
+    { text: "Hufflepuff", isCorrect: false }
+    ]
+
+},
+
+{
+    id: 4,
+    q: "What class did Neville end up teaching at Hogwarts?",
+    a: [{ text: "Astronomy", isCorrect: false },
+    { text: "Charms", isCorrect: false },
+    { text: "Muggle Studies", isCorrect: false },
+    { text: "Herbology", isCorrect: true }
     ]
 
 }
@@ -131,7 +154,7 @@ var id = 0;
 
 next.addEventListener("click", () => {
     start = false;
-    if (id < 2) {
+    if (id < 4) {
         id++;
         iterate(id);
         console.log(id);
@@ -180,4 +203,5 @@ next.addEventListener("click", () => {
         "question": "What class did Neville end up teaching at Hogwarts?",
         "options": ["Astronomy", "Herbology", "Charms", "Muggle Studies"]
     }
+}
 ] */
