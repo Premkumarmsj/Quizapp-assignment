@@ -142,7 +142,7 @@ function finder(prk) {
         a=12;
     }
     else{
-        totalq.innerHTML= "Not Success" ;
+        totalq.innerHTML= "5" ;
     }
   
     
@@ -157,7 +157,7 @@ function finder1(kp) {
         b=12;
     }
     else{
-        totalq.innerHTML= "Not Success" ;
+        totalq.innerHTML= "5" ;
     }
   
     
@@ -171,7 +171,7 @@ function finder2(pkp) {
         c=12;
     }
     else{
-        totalq.innerHTML= "Not 5" ;
+        totalq.innerHTML= "5" ;
     }
   
     
@@ -185,7 +185,7 @@ function finder3(ckp) {
         d=12;
     }
     else{
-        totalq.innerHTML= "Not Success" ;
+        totalq.innerHTML= "5" ;
     }
   
     
@@ -199,7 +199,7 @@ function finder4(jkp) {
         e=12;
     }
     else{
-        totalq.innerHTML= "Not Success" ;
+        totalq.innerHTML= "5" ;
     }
   
     
@@ -231,7 +231,7 @@ if(a && b && c && d && e){
     result.innerHTML=" 5"
 }
 else{
-    result.innerHTML = "not"
+    result.innerHTML = "0"
 }
 
 }
