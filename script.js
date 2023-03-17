@@ -286,3 +286,38 @@ else
 
 
 }
+
+
+
+
+
+
+
+var totalq = document.getElementById("totalquestion")
+ 
+
+
+
+  
+      
+       /* submit.querySelectorAll("click", function () {
+
+        for(Score=0;result>Score;Score++){
+            Score++;
+            result.innerHTML = Score ;
+        }
+            
+            
+        }); */
+
+       /* submit.addEventListener("click", function () {
+
+        for(Score=0;result>Score;Score++){
+            Score++;
+            result.innerHTML = Score ;
+        }
+            
+            
+        }); */
+    
+
