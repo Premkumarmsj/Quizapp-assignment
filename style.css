@@ -103,7 +103,9 @@ h1 {
 
 
 }
-
+.submit:hover{
+    cursor:pointer;
+}
 #submit {
     background-color: #fad744;
     width: 100px;
