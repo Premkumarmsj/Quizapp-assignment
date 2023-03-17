@@ -1,207 +1,272 @@
-// Questions will be asked
-const Questions = [
+var questionBank = [
+    { 
+        question : 'Which was not one of Voldemort s Horcruxes?',
+        option   : [' Harry',' Nagini',' Helga s Diadem',' Tom Riddle Diary'], 
+        answer   : ' Helga s Diadem'
+    },
+
     {
-    id: 0,
-    q: "Which was not one of Voldemort's Horcruxes?",
-    a: [{ text: "Harry", isCorrect: false },
-    { text: "Nagini", isCorrect: false },
-    { text: "Helga's Diadem", isCorrect: true },
-    { text: "Tom Riddle's Diary", isCorrect: false }
-    ]
+        question : 'Which of these are not one of Hagrid s many pets?',
+        option   : [' Grawp',' Fluffy',' Aragog',' Noberta'],
+        answer   : 'Grawp'
+    },
 
-},
-{
-    id: 1,
-    q: "Which of these are not one of Hagrid's many pets?",
-    a: [{ text: "Grawp", isCorrect: true},
-    { text: "Fluffy", isCorrect: false },
-    { text: "Aragog", isCorrect: false },
-    { text: "Noberta", isCorrect: false }
-    ]
+    {
+        
+        question : 'Which class did Severus Snape always want to teach?',
+        option   : [' Potions',' Charms',' Defense Against Dark Arts',' Transfiguration'],
+        answer   : ' Potions'
+    },
 
-},
-{
-    id: 2,
-    q: "Which class did Severus Snape always want to teach?",
-    a: [{ text: "Potions", isCorrect: true },
-    { text: "Charms", isCorrect: false },
-    { text: "Defense Against Dark Arts", isCorrect: false },
-    { text: "Transfiguration", isCorrect: false }
-    ]
+    {
+      
+        question : 'Which Hogwarts house did Moaning Myrtle belong in?',
+        option   : [' Gryffindor',' Slytherin',' Ravenclaw',' Hufflepuff'],
+        answer   : ' Ravenclaw'
+    },
 
-},
-
-{
-    id: 3,
-    q: "Which Hogwarts house did Moaning Myrtle belong in?",
-    a: [{ text: "Gryffindor", isCorrect: false },
-    { text: "Slytherin", isCorrect: false },
-    { text: "Ravenclaw", isCorrect: true },
-    { text: "Hufflepuff", isCorrect: false }
-    ]
-
-},
-
-{
-    id: 4,
-    q: "What class did Neville end up teaching at Hogwarts?",
-    a: [{ text: "Astronomy", isCorrect: false },
-    { text: "Charms", isCorrect: false },
-    { text: "Muggle Studies", isCorrect: false },
-    { text: "Herbology", isCorrect: true }
-    ]
-
-}
-
+    {
+        
+        question : 'What class did Neville end up teaching at Hogwarts?',
+        option   : [' Astronomy',' Charms',' Muggle Studies',' Herbology'],
+        answer   : ' Herbology'
+    }
 ]
 
-// Set start
-var start = true;
+var question = document.getElementById("question");
+var option0 = document.getElementById("option0");
+var option1 = document.getElementById("option1");
+var option2 = document.getElementById("option2");
+var option3 = document.getElementById("option3");
 
-// Iterate
-function iterate(id) {
+var question1 = document.getElementById("question1");
+var option10 = document.getElementById("option10");
+var option11 = document.getElementById("option11");
+var option12 = document.getElementById("option12");
+var option13 = document.getElementById("option13");
 
-    // Getting the result display section
-    var result = document.getElementsByClassName("result");
-    result[0].innerText = "";
+var question2 = document.getElementById("question2");
+var option20 = document.getElementById("option20");
+var option21 = document.getElementById("option21");
+var option22 = document.getElementById("option22");
+var option23 = document.getElementById("option23");
 
-    // Getting the question
-    const question = document.getElementById("question");
+var question3 = document.getElementById("question3");
+var option30 = document.getElementById("option30");
+var option31 = document.getElementById("option31");
+var option32 = document.getElementById("option32");
+var option33 = document.getElementById("option33");
+
+var question4 = document.getElementById("question4");
+var option40 = document.getElementById("option40");
+var option41 = document.getElementById("option41");
+var option42 = document.getElementById("option42");
+var option43 = document.getElementById("option43");
+
+var submit =document.getElementById("submit")
+var result = document.getElementById("result")
 
 
-    // Setting the question text
-    question.innerText = Questions[id].q;
-
-    // Getting the options
-    const op1 = document.getElementById('op1');
-    const op2 = document.getElementById('op2');
-    const op3 = document.getElementById('op3');
-    const op4 = document.getElementById('op4');
 
 
-    // Providing option text
-    op1.innerText = Questions[id].a[0].text;
-    op2.innerText = Questions[id].a[1].text;
-    op3.innerText = Questions[id].a[2].text;
-    op4.innerText = Questions[id].a[3].text;
 
-    // Providing the true or false value to the options
-    op1.value = Questions[id].a[0].isCorrect;
-    op2.value = Questions[id].a[1].isCorrect;
-    op3.value = Questions[id].a[2].isCorrect;
-    op4.value = Questions[id].a[3].isCorrect;
+question.innerHTML='Q1. Which was not one of Voldemort s Horcruxes?';
+option0.innerHTML=' Harry';
+option1.innerHTML=' Nagini';
+option2.innerHTML =' Helga s Diadem';
+option3.innerHTML=' Tom Riddle Diary';
 
-    var selected = "";
 
-    // Show selection for op1
-    op1.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightgoldenrodyellow";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
-        selected = op1.value;
-    })
+question1.innerHTML='Q2. Which of these are not one of Hagrid s many pets?';
+option10.innerHTML=' Grawp';
+option11.innerHTML=' Fluffy';
+option12.innerHTML =' Aragog';
+option13.innerHTML=' Noberta';
 
-    // Show selection for op2
-    op2.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightgoldenrodyellow";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightskyblue";
-        selected = op2.value;
-    })
+question2.innerHTML='Q3. Which class did Severus Snape always want to teach?';
+option20.innerHTML=' Potions';
+option21.innerHTML=' Charms';
+option22.innerHTML =' Defense Against Dark Arts';
+option23.innerHTML=' Transfiguration';
 
-    // Show selection for op3
-    op3.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightgoldenrodyellow";
-        op4.style.backgroundColor = "lightskyblue";
-        selected = op3.value;
-    })
 
-    // Show selection for op4
-    op4.addEventListener("click", () => {
-        op1.style.backgroundColor = "lightskyblue";
-        op2.style.backgroundColor = "lightskyblue";
-        op3.style.backgroundColor = "lightskyblue";
-        op4.style.backgroundColor = "lightgoldenrodyellow";
-        selected = op4.value;
-    })
 
-    // Grabbing the evaluate button
-    const evaluate = document.getElementsByClassName("evaluate");
+question3.innerHTML='Q4. Which Hogwarts house did Moaning Myrtle belong in?';
+option30.innerHTML=' Gryffindor';
+option31.innerHTML=' Slytherin';
+option32.innerHTML =' Ravenclaw';
+option33.innerHTML=' Hufflepuff';
 
-    // Evaluate method
-    evaluate[0].addEventListener("click", () => {
-        if (selected == "true") {
-            result[0].innerHTML = "True";
-            result[0].style.color = "green";
-        } else {
-            result[0].innerHTML = "False";
-            result[0].style.color = "red";
+question4.innerHTML='Q5. What class did Neville end up teaching at Hogwarts?';
+option40.innerHTML=' Astronomy';
+option41.innerHTML=' Charms';
+option42.innerHTML =' Muggle Studies';
+option43.innerHTML =' Herbology';
+
+submit.innerHTML='Submit'
+
+
+
+
+/* function myFunction() {
+    
+   
+   
+  } */
+
+  let Score = 0;
+  var a,b,c,d,e;
+
+  /* a=0;
+  b=0;
+  c=0;
+  d=0;
+  e=0; */
+
+  
+/*   if( prem == qsfn ){
+    console.log("Click same")
+}
+else{
+    console.log("Not click same")
+} */
+
+/* var result = document.getElementById("result"); */
+
+
+function finder(prk) {
+    result.innerHTML = prk;
+    
+    if(13 == prk){
+        totalq.innerHTML = "5";
+        a=12;
+    }
+    else{
+        totalq.innerHTML= "Not Success" ;
+    }
+  
+    
+}
+
+
+function finder1(kp) {
+    result.innerHTML = kp;
+    
+    if(21 == kp){
+        totalq.innerHTML = "5";
+        b=12;
+    }
+    else{
+        totalq.innerHTML= "Not Success" ;
+    }
+  
+    
+}
+
+function finder2(pkp) {
+    result.innerHTML = pkp;
+    
+    if(31 == pkp){
+        totalq.innerHTML = "5";
+        c=12;
+    }
+    else{
+        totalq.innerHTML= "Not 5" ;
+    }
+  
+    
+}
+
+function finder3(ckp) {
+    result.innerHTML = ckp;
+    
+    if(43 == ckp){
+        totalq.innerHTML = "5";
+        d=12;
+    }
+    else{
+        totalq.innerHTML= "Not Success" ;
+    }
+  
+    
+}
+
+function finder4(jkp) {
+    result.innerHTML = jkp;
+    
+    if(54 == jkp){
+        totalq.innerHTML = "5";
+        e=12;
+    }
+    else{
+        totalq.innerHTML= "Not Success" ;
+    }
+  
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var output = document.getElementById("premji")
+
+
+
+
+function out(){
+
+
+
+if(a && b && c && d && e){
+    result.innerHTML=" 5"
+}
+else{
+    result.innerHTML = "not"
+}
+
+}
+
+
+
+
+
+
+
+var totalq = document.getElementById("totalquestion")
+ 
+
+
+
+  
+      
+       /* submit.querySelectorAll("click", function () {
+
+        for(Score=0;result>Score;Score++){
+            Score++;
+            result.innerHTML = Score ;
         }
-    })
-}
+            
+            
+        }); */
 
-if (start) {
-    iterate("0");
-}
+       /* submit.addEventListener("click", function () {
 
-// Next button and method
-const next = document.getElementsByClassName('next')[0];
-var id = 0;
-
-next.addEventListener("click", () => {
-    start = false;
-    if (id < 4) {
-        id++;
-        iterate(id);
-        console.log(id);
-    }
-
-})
-
-//AAAAAAAAAAAAAAAAAAAAAAAAAA-------------------------AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//
-
-
-
-
-
-/* [
-    {
-        "id": 1,
-        "answer": 3,
-        "question": "Which was not one of Voldemort's Horcruxes?",
-        "options": ["Harry", "Nagini", "Helga's Diadem", "Tom Riddle's Diary"]
-    },
-
-    {
-        "id": 2,
-        "answer": 1,
-        "question": "Which of these are not one of Hagrid's many pets?",
-        "options": ["Grawp", "Fluffy", "Aragog", "Noberta"]
-    },
-
-    {
-        "id": 3,
-        "answer": 3,
-        "question": "Which class did Severus Snape always want to teach?",
-        "options": ["Potions", "Charms", "Defense Against Dark Arts","Transfiguration"]
-    },
-
-    {
-        "id": 4,
-        "answer": 3,
-        "question": "Which Hogwarts house did Moaning Myrtle belong in?",
-        "options": ["Gryffindor", "Slytherin", "Ravenclaw", "Hufflepuff"]
-    },
-
-    {
-        "id": 5,
-        "answer": 2,
-        "question": "What class did Neville end up teaching at Hogwarts?",
-        "options": ["Astronomy", "Herbology", "Charms", "Muggle Studies"]
-    }
-] */
+        for(Score=0;result>Score;Score++){
+            Score++;
+            result.innerHTML = Score ;
+        }
+            
+            
+        }); */
+    
 
