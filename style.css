@@ -98,14 +98,12 @@ h1 {
 
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 100px;cursor:pointer;
 
 
 
 }
-.submit:hover{
-    cursor:pointer;
-}
+
 #submit {
     background-color: #fad744;
     width: 100px;
