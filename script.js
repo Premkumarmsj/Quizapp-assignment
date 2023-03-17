@@ -135,14 +135,19 @@ else{
 
 
 function finder(prk) {
-    result.innerHTML = prk;
+
+   
     
-    if(13 == prk){
+
+   /*  result.innerHTML = pp; */
+ 
+    
+    if(prk == 13){
         totalq.innerHTML = "5";
-        a=12;
+        a = 1;
     }
     else{
-        totalq.innerHTML= "5" ;
+        totalq.innerHTML = "5"; 
     }
   
     
@@ -150,56 +155,56 @@ function finder(prk) {
 
 
 function finder1(kp) {
-    result.innerHTML = kp;
+    /* result.innerHTML = kp; */
     
-    if(21 == kp){
+    if(kp == 21){
         totalq.innerHTML = "5";
-        b=12;
+        b = 1;
     }
     else{
-        totalq.innerHTML= "5" ;
+        totalq.innerHTML = "5"; ;
     }
   
     
 }
 
 function finder2(pkp) {
-    result.innerHTML = pkp;
-    
-    if(31 == pkp){
+   /*  result.innerHTML = pkp; */
+   
+    if(pkp == 31){
         totalq.innerHTML = "5";
-        c=12;
+        c = 1;
     }
     else{
-        totalq.innerHTML= "5" ;
+        totalq.innerHTML = "5"; ;
     }
   
     
 }
 
 function finder3(ckp) {
-    result.innerHTML = ckp;
-    
-    if(43 == ckp){
+    /* result.innerHTML = ckp; */
+   
+    if(ckp == 43){
         totalq.innerHTML = "5";
-        d=12;
+        d = 1;
     }
     else{
-        totalq.innerHTML= "5" ;
+        totalq.innerHTML = "5"; ;
     }
   
     
 }
 
 function finder4(jkp) {
-    result.innerHTML = jkp;
-    
-    if(54 == jkp){
+    /* result.innerHTML = jkp; */
+  
+    if(jkp == 54){
         totalq.innerHTML = "5";
-        e=12;
+        e = 1;
     }
     else{
-        totalq.innerHTML= "5" ;
+        totalq.innerHTML = "5"; 
     }
   
     
@@ -218,8 +223,16 @@ function finder4(jkp) {
 
 
 
-var output = document.getElementById("premji")
 
+/* var output = document.getElementById("premji")
+
+if(a == b && b == c && c == d && d == e ){
+    output.innerHTML= 5;
+}
+else{
+    output.innerHTML= 0;
+}
+ */
 
 
 
@@ -227,46 +240,49 @@ function out(){
 
 
 
-if(a && b && c && d && e){
-    result.innerHTML=" 5"
+/* if(a = 13){
+    result.innerHTML= "1";
 }
-else{
-    result.innerHTML = "0"
+else if(b = 21){
+    result.innerHTML = "2"
 }
-
+else if(c = 31){
+    result.innerHTML = "3"
 }
+else if(d =43){
+    result.innerHTML = "4"
+}
+else if(e = 54){
+    result.innerHTML = "5"
+} */
 
 
-
-
-
-
-
-var totalq = document.getElementById("totalquestion")
- 
-
-
-
-  
-      
-       /* submit.querySelectorAll("click", function () {
-
-        for(Score=0;result>Score;Score++){
-            Score++;
-            result.innerHTML = Score ;
-        }
-            
-            
-        }); */
-
-       /* submit.addEventListener("click", function () {
-
-        for(Score=0;result>Score;Score++){
-            Score++;
-            result.innerHTML = Score ;
-        }
-            
-            
-        }); */
+if(a&&b&&c&&d&&e&&a){
+    result.innerHTML= "5";
     
+}
+else if(a&&b&&c&&d || a&&b&&c&&e || a&&b&&d&&e || a&&c&&d&&e || b&&c&&d&&e)
+{
+    result.innerHTML = "4"
+    
+}
+else if(a&&b&&c || a&&b&&d || a&&b&&e || a&&c&&d || a&&c&&e || a&&d&&e || b&&c&&d || b&&c&&e || b&&d&&e || c&&d&&e )
+{
+    result.innerHTML= "3";
+   
+}
+else if(a&&b || a&&c || a&&d || a&&e || b&&c || b&&d || b&&e || c&&d || c&&e || d&&e )
+{
+    result.innerHTML= "2";
+    
+}
+else 
+{
+    result.innerHTML= "1";
+    
+   
+}
 
+
+
+}
