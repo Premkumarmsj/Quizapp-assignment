@@ -148,6 +148,7 @@ function finder(prk) {
     }
     else{
         totalq.innerHTML = "5"; 
+        a = 0;
     }
   
     
@@ -162,7 +163,8 @@ function finder1(kp) {
         b = 1;
     }
     else{
-        totalq.innerHTML = "5"; ;
+        totalq.innerHTML = "5";
+        b = 0;
     }
   
     
@@ -176,7 +178,8 @@ function finder2(pkp) {
         c = 1;
     }
     else{
-        totalq.innerHTML = "5"; ;
+        totalq.innerHTML = "5";
+        c = 0;
     }
   
     
@@ -190,7 +193,8 @@ function finder3(ckp) {
         d = 1;
     }
     else{
-        totalq.innerHTML = "5"; ;
+        totalq.innerHTML = "5";
+        d = 0;
     }
   
     
@@ -205,6 +209,7 @@ function finder4(jkp) {
     }
     else{
         totalq.innerHTML = "5"; 
+        e = 0;
     }
   
     
