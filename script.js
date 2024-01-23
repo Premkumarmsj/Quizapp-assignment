@@ -77,7 +77,7 @@ option2.innerHTML =' Helga s Diadem';
 option3.innerHTML=' Tom Riddle Diary';
 
 
-question1.innerHTML='Q2. Which of these are not one of Hagrid s many pets?';
+question1.innerHTML='Q2. Hello';
 option10.innerHTML=' Grawp';
 option11.innerHTML=' Fluffy';
 option12.innerHTML =' Aragog';
